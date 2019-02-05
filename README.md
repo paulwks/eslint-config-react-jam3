@@ -5,7 +5,6 @@ This package exposes the Jam3's ESLint config file for React applications.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
-- [Rules](#rules)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Related](#related)
@@ -13,13 +12,23 @@ This package exposes the Jam3's ESLint config file for React applications.
 
 ## Installation
 
+### Main package
+
 ```bash
-npm install --save-dev eslint-config-react-jam3
+npm i eslint-config-react-jam3 -D
+```
+
+### Secondary packages
+
+Because ESLint only exports a configuration file you need to install all the plugins and configs that this file is depending on.
+
+```bash
+npm i eslint babel-eslint eslint-plugin-import eslint-plugin-promise eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-config-prettier eslint-plugin-prettier -D
 ```
 
 ## Usage
 
-Once installed `eslint-config-jam3` add `jam3` in your `extends` section of your [ESLint configuration](https://eslint.org/docs/user-guide/configuring)
+Once installed `eslint-config-react-jam3` add `react-jam3` in your `extends` section of your [ESLint configuration](https://eslint.org/docs/user-guide/configuring)
 
 ```
 {
@@ -32,11 +41,11 @@ Once installed `eslint-config-jam3` add `jam3` in your `extends` section of your
 
 ## Tests
 
-[What type of tests are included and how to run it]
+To run the tests we are using eslint cli passing our configuration by default, if eslint finds an error in the file it will throw and error.
 
-## Rules
-
-[Document what the public functions do, etc]
+```
+$ npm test
+```
 
 ## Contributing
 
