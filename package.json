@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-jam3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Jam3's ESLint config file for React applications",
   "main": "index.js",
   "scripts": {
