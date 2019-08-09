@@ -21,7 +21,7 @@ module.exports = {
     }
   },
 
-  plugins: ['promise', 'import', 'jsx-a11y'],
+  plugins: ['promise', 'import', 'jsx-a11y', 'react-hooks'],
 
   extends: ['eslint:recommended', 'plugin:prettier/recommended'],
 
@@ -43,6 +43,9 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'warn',
       { devDependencies: true, optionalDependencies: true, peerDependencies: false }
-    ]
+    ],
+
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error'
   }
 };
