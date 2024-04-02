@@ -45,7 +45,7 @@
   "homepage": "https://github.com/Jam3/eslint-config-react-jam3#readme",
   "peerDependencies": {
     "babel-eslint": "10.x",
-    "eslint": "5.x",
+    "eslint": "6.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-promise": "4.x",
     "eslint-plugin-jsx-a11y": "6.x",
